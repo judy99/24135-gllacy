@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Yulia Kurianova](https://up.htmlacademy.ru/htmlcss/13/user/24135).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Гурьев](https://htmlacademy.ru/profile/id205403).
 
 ---
 
