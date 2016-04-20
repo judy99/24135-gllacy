@@ -5,17 +5,15 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <div class="main-container">
-      <header class="main-header">       
+    <div class="container">
+      <header class="main-header">
         <a href="index.html" class="index-logo">
           <img src="img/placehold.it" width="154" height="64" alt="Gllacy Shop">
         </a>
         <nav class="main-nav">
-          <ul>
-            <li><a href="#" class="current">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-          </ul>
+          <a href="#" class="current">Каталог</a>
+          <a href="#">Доставка и оплата</a>
+          <a href="#">О Компании</a>
         </nav>
         <div class="user-block">
           <a class="search" href="#"><span class="hidden-text">Найти</span></a>
@@ -28,28 +26,176 @@
         </div>
       </header>
       <main>
+      <nav class="sub-nav">
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#" class="current">Сливочное</a>
+      </nav>
+      <section class="product">
+        <h1>Сливочное мороженое</h1>
+        <form id="filters" class="filters" action="script.php" method="post">
+          <label>Сортировка:
+            <select class="filter filter-sort">
+              <option value="best" selected>по популярности</option>
+              <option value="high-price-first">сначала недорогие</option>
+              <option value="low-price-first">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </label>
+          <label>Цена: 100 руб. - 500 руб.
+            <input type="range" min="0" max="1000" class="filter filter-price">
+          </label>
+          
+          <fieldset class="filter filter-fat">
+            <label><input type="radio" name="fat" value="zero">0%</label>
+            <label><input type="radio" name="fat" value="to-ten" checked>до 10%</label>
+            <label><input type="radio" name="fat" value="to-thirty">до 30%</label>
+            <label><input type="radio" name="fat" value="over-thirty">выше 30%</label>
+          </fieldset>
+          <fieldset class="filter filter-stuff">
+            <label><input type="checkbox" name="stuff" value="choco" checked>шоколадные</label>
+            <label><input type="checkbox" name="stuff" value="sugar" checked>сахарные присыпки</label>
+            <label><input type="checkbox" name="stuff" value="fruit">фрукты</label>
+            <label><input type="checkbox" name="stuff" value="syrup">сиропы</label>
+            <label><input type="checkbox" name="stuff" value="jam">джемы</label>
+          </fieldset>
+          <input type="submit" value="Применить" class="btn filter-btn">
+        </form>
+        <!-- catalog -->
+        <div class="catalog">
+          <ul class="list-item">
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+            <li>
+              <a href="#" class="item item-bestseller">
+                <img class="item-pic" src="img/placehold.it" alt="item" width="267" height="267">
+                <span class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <span class="item-price">310 &#8381;/кг</span>
+              </a>
+              <a href="#" class="btn btn-view">Быстрый просмотр</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end catalog -->
+        <ul class="pages">
+          <li class="page page-disabled"><a href="#">&lt;</a></li>
+          <li class="page"><a href="#">1</a></li>
+          <li class="page"><a href="#">2</a></li>
+          <li class="page"><a href="#">3</a></li>
+          <li class="page"><a href="#">4</a></li>
+          <li class="page"><a href="#">5</a></li>
+          <li class="page"><a href="#">&gt;</a></li>
+        </ul>     
+      </section>
       </main>
+      
       <footer>
-        <section class="footer-social">
+        <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        </section>
+        </div>
         <nav class="footer-nav">
-            <div class="footer-nav-left">
-              <a href="#">Для поставщиков</a>
-              <a href="#">О производстве</a>
-            </div>
-            <div class="footer-nav-right">
-              <a href="#">Наши документы</a>
-              <a href="#">Экологические стандарты</a>
-            </div>
+          <div class="footer-nav-left">
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </div>
+          <div class="footer-nav-right">
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
         </nav>
-        <section class="footer-copyright">
+        <div class="footer-copyright">
           <a class="htmlacademy-logo" href="#"><img src="img/placehold.it" width="108" height="38" alt="HTML Academy"></a>
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
-        </section>
+        </div>
       </footer>
     </div>
   </body>
