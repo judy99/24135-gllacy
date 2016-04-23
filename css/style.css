@@ -1,0 +1,61 @@
+/* font-family: "roboto"; */
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto/roboto.woff") format("woff"),
+    url("../fonts/Roboto/roboto.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "robotomedium"; */
+@font-face {
+    font-family: "robotomedium";
+    src: url("../fonts/Roboto/robotomedium.woff") format("woff"),
+    url("../fonts/Roboto/robotomedium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'roboto', sans-serif;
+  background-color: #849d8f;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'robotomedium', sans-serif;
+}
+
+/*.hidden {
+  display: none;
+}
+
+.search-icon {
+  display: inline-block;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.search-icon:before {
+  content:"";
+  display: inline-block;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icons/loupe.svg") no-repeat;
+}*/
