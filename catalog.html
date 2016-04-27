@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <a href="index.html" class="index-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
         </a>
@@ -51,18 +51,18 @@
           <a class="cart cart-noempty">2 товара</a>
           
           <!-- form product list -->
-          <form action="#" method="post" id="cart-form">
+          <form action="#" method="post" id="cart-form" class="cart-form">
             <table class="cart-list">
               <tr class="cart-item">
                 <td><input type="checkbox" name="selected-items[]" id="item1"></td>
-                <td><img src="img/goods/thumbs/1.png"></td>
+                <td><img src="img/goods/thumbs/1.png" alt="thumb1"></td>
                 <td><label for="item1">Пломбир с апельсиновым джемом</label></td>
                 <td>1,5 кг х <span class="">200 руб.</span></td>
                 <td>300 руб.</td>
               </tr>
               <tr class="cart-item">
                 <td><input type="checkbox" name="selected-items[]" id="item2"></td>
-                <td><img src="img/goods/thumbs/2.png"></td>
+                <td><img src="img/goods/thumbs/2.png" alt="thumb1"></td>
                 <td><label for="item2">Клубничный пломбир с присыпкой из белого шоколада</label></td>
                 <td>1,5 кг х <span>300 руб.</span></td>
                 <td>450 руб.</td>
@@ -73,11 +73,12 @@
             </table>
             <input type="submit" value="Оформить заказ" class="btn btn-order">
           </form>
+          <div class="company-info">
+            <div class="open-hours">С 10 до 20, ежедневно</div>
+            <a href="tel:+88124502525" class="tel-number">8 812 450-25-25</a>
+          </div>
         </div>
-        <div class="company-info">
-          <div class="open-hours">С 10 до 20, ежедневно</div>
-          <a href="tel:+88124502525" class="tel-number">8 812 450-25-25</a>
-        </div>
+        
       </header>
       <main>
       <nav class="sub-nav">
@@ -88,31 +89,41 @@
       <section class="product">
         <h1>Сливочное мороженое</h1>
         <form id="filters" class="filters" action="#" method="post">
-          <label>Сортировка:
-            <select class="filter filter-sort">
-              <option value="best" selected>по популярности</option>
-              <option value="high-price-first">сначала недорогие</option>
-              <option value="low-price-first">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
-          </label>
-          <label>Цена: 100 руб. - 500 руб.
-            <input type="range" min="0" max="1000" class="filter filter-price">
-          </label>
+          <div class="filter-set">
+            <label>Сортировка:<br>
+              <select class="filter filter-sort" id="filter-sort">
+                <option value="best" selected>по популярности</option>
+                <option value="high-price-first">сначала недорогие</option>
+                <option value="low-price-first">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </label>
+          </div>
           
-          <fieldset class="filter filter-fat">
-            <label><input type="radio" name="fat" value="zero">0%</label>
-            <label><input type="radio" name="fat" value="to-ten" checked>до 10%</label>
-            <label><input type="radio" name="fat" value="to-thirty">до 30%</label>
-            <label><input type="radio" name="fat" value="over-thirty">выше 30%</label>
-          </fieldset>
-          <fieldset class="filter filter-stuff">
-            <label><input type="checkbox" name="stuff-choco" checked>шоколадные</label>
-            <label><input type="checkbox" name="stuff-sugar" checked>сахарные присыпки</label>
-            <label><input type="checkbox" name="stuff-fruit">фрукты</label>
-            <label><input type="checkbox" name="stuff-syrup">сиропы</label>
-            <label><input type="checkbox" name="stuff-jam">джемы</label>
-          </fieldset>
+          <div class="filter-set">
+            <label>Цена: 100 руб. - 500 руб.<br>
+              <input type="range" min="0" max="1000" class="filter filter-price">
+            </label>
+          </div>
+          
+          <div class="filter-set">Жирность:<br>
+            <fieldset class="filter filter-fat">
+              <label><input type="radio" name="fat" value="zero">0%</label>
+              <label><input type="radio" name="fat" value="to-ten" checked>до 10%</label>
+              <label><input type="radio" name="fat" value="to-thirty">до 30%</label>
+              <label><input type="radio" name="fat" value="over-thirty">выше 30%</label>
+            </fieldset>
+          </div>
+          
+          <div class="filter-set">Наполнители:<br>
+            <fieldset class="filter filter-stuff">
+              <label><input type="checkbox" name="stuff-choco" checked>шоколадные</label>
+              <label><input type="checkbox" name="stuff-sugar" checked>сахарные присыпки</label>
+              <label><input type="checkbox" name="stuff-fruit">фрукты</label>
+              <label><input type="checkbox" name="stuff-syrup">сиропы</label>
+              <label><input type="checkbox" name="stuff-jam">джемы</label>
+            </fieldset>
+          </div>
           <input type="submit" value="Применить" class="btn filter-btn">
         </form>
         <!-- catalog -->
@@ -204,7 +215,7 @@
         </ul>
       </section>
       </main>
-      <footer>
+      <footer class="footer footer-catalog clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -212,13 +223,13 @@
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </div>
         <nav class="footer-nav">
-          <div class="footer-nav-left">
-            <a href="#">Для поставщиков</a>
-            <a href="#">О производстве</a>
+          <div class="footer-nav-col1">
+            <a href="#"><span>Для поставщиков</span></a>
+            <a href="#"><span>О производстве</span></a>
           </div>
-          <div class="footer-nav-right">
-            <a href="#">Наши документы</a>
-            <a href="#">Экологические стандарты</a>
+          <div class="footer-nav-col2">
+            <a href="#"><span>Наши документы</span></a>
+            <a href="#"><span>Экологические стандарты</span></a>
           </div>
         </nav>
         <div class="footer-copyright">

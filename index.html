@@ -10,14 +10,14 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <div class="index-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
         </div>
         <nav class="main-nav">
           <ul class="main-menu">
             <li>
-              <a href="catalog.html">Каталог</a>
+              <a href="catalog.html" class="has-submenu">Каталог</a>
               <ul class="main-submenu">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
@@ -50,11 +50,11 @@
             </div>
           </form>
           <!-- cart block -->
-          <a class="cart cart-empty">0 товаров</a>
-        </div>
-        <div class="company-info">
-          <div class="open-hours">С 10 до 20, ежедневно</div>
-          <a href="tel:+88124502525" class="tel-number">8 812 450-25-25</a>
+          <a class="cart cart-empty">Пусто</a>
+          <div class="company-info">
+            <div class="open-hours">С 10 до 20, ежедневно</div>
+            <a href="tel:+88124502525" class="tel-number">8 812 450-25-25</a>
+          </div>
         </div>
       </header>
       <main>
@@ -70,16 +70,16 @@
         </div>
         <a class="btn slider-btn">Давайте оба!</a>
       </div>
-      <div class="promo-content">
-        <div class="promo col-left">
-          <h2 class="promo-title">Малинка даром!</h2>
+      <div class="promo-content clearfix">
+        <div class="promo promo-left-col">
+          <div class="promo-title">Малинка даром!</div>
           <p class="promo-text">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
           <a class="btn promo-btn">Хочу варенье!</a>
         </div>
-        <div class="promo col-right">
-          <h2 class="promo-title">Малинка даром!</h2>
+        <div class="promo promo-right-col">
+          <div class="promo-title">Малинка даром!</div>
           <p class="promo-text">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.
           </p>
@@ -89,7 +89,7 @@
       <div class="catalog">
         <ul class="list-item">
           <li class="item">
-            <img class="item-pic" src="img/goods/1.png" alt="item" width="267" height="267">
+            <img class="item-pic" src="img/goods/r1/1.png" alt="item" width="267" height="267">
             <div class="item-bestseller">Хит</div>
             <div class="item-title">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -98,7 +98,7 @@
             <a href="#" class="btn btn-view">Быстрый просмотр</a>
           </li>
           <li class="item">
-            <img class="item-pic" src="img/goods/2.png" alt="item" width="267" height="267">
+            <img class="item-pic" src="img/goods/r1/2.png" alt="item" width="267" height="267">
             <div class="item-bestseller">Хит</div>
             <div class="item-title">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -107,7 +107,7 @@
             <a href="#" class="btn btn-view">Быстрый просмотр</a>
           </li>
           <li class="item">
-            <img class="item-pic" src="img/goods/3.png" alt="item" width="267" height="267">
+            <img class="item-pic" src="img/goods/r1/3.png" alt="item" width="267" height="267">
             <div class="item-bestseller">Хит</div>
             <div class="item-title">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -116,7 +116,7 @@
             <a href="#" class="btn btn-view">Быстрый просмотр</a>
           </li>
           <li class="item">
-            <img class="item-pic" src="img/goods/4.png" alt="item" width="267" height="267">
+            <img class="item-pic" src="img/goods/r1/4.png" alt="item" width="267" height="267">
             <div class="item-bestseller">Хит</div>
             <div class="item-title">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -126,11 +126,11 @@
           </li>
         </ul>
       </div>
-      <section class="about-product">
-        <h3>
+      <section class="about-product-content clearfix">
+        <h2>
         Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
-        </h3>
-        <div class="col-left">
+        </h2>
+        <div class="about-product about-product-left">
           <p>
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </p>
@@ -138,7 +138,7 @@
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
         </div>
-        <div class="col-right">
+        <div class="about-product about-product-right">
           <p>
             Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
@@ -147,18 +147,22 @@
           </p>
         </div>
       </section>
-      <div class="wrapper">
-        <div class="new-post col-left">
-          <p>Новое в нашем блоге</p>
-          <a href="">10  способов сервировки фруктовых щербетов к столу</a>
+      <div class="misc-content clearfix">
+        <div class="misc misc-left-col">
+          <div class="new-post">
+            <p>Новое в нашем блоге</p>
+            <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+          </div>
         </div>
-        <div class="subscribe col-right">
-          <form method="post" action="#" name="subscribe">
+        <div class="misc misc-right-col">
+          <form method="post" action="#" name="subscribe" class="subscribe">
             <p>
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
             </p>
-            <input type="email" placeholder="Электронная почта" value="email">
-            <input type="submit" value="Отправить" class="btn">
+            <div class="subscribe-input">
+              <input type="email" placeholder="Электронная почта">
+              <input type="submit" value="Отправить" class="btn">
+            </div>
           </form>
         </div>
       </div>
@@ -186,28 +190,28 @@
         </div>
       </div>
       </main>
-      <footer class="footer">
+      <footer class="footer clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </div>
-        <nav class="footer-nav">
-          <div class="footer-nav-left">
-            <a href="#">Для поставщиков</a>
-            <a href="#">О производстве</a>
+        <nav class="footer-nav clearfix">
+          <div class="footer-nav-col1">
+            <a href="#"><span>Для поставщиков</span></a>
+            <a href="#"><span>О производстве</span></a>
           </div>
-          <div class="footer-nav-right">
-            <a href="#">Наши документы</a>
-            <a href="#">Экологические стандарты</a>
+          <div class="footer-nav-col2">
+            <a href="#"><span>Наши документы</span></a>
+            <a href="#"><span>Экологические стандарты</span></a>
           </div>
         </nav>
         <div class="footer-copyright">
           <a class="htmlacademy-logo" href="#">
             <img src="img/logo-academy.svg" width="108" height="38" alt="HTML Academy">
           </a>
-          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+          <p>Сделано в <a href="https://htmlacademy.ru"><span>HTML Academy</span></a> &copy; 2016</p>
         </div>
       </footer>
     </div>
