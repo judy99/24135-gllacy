@@ -1100,6 +1100,9 @@ a.tel-number:hover {
 
 .btn-view {
     display: none;
+    position: absolute;
+    top:auto;
+    left:0px;
 }
 
 .item:hover {
@@ -1113,6 +1116,10 @@ a.tel-number:hover {
 .item:hover a {
     border:none;
     color:#fff;
+}
+
+.item:hover .btn-view {
+    display:block;
 }
 /*******************/
 /* slider */
@@ -1278,7 +1285,7 @@ a.slider-active:hover,
 .catalog
 {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 /*******************/
@@ -1762,19 +1769,105 @@ textarea:focus::-moz-placeholder
 {
     font-size: 0;
     /* margin-right: 27px; */
-
-    margin: 10px 27px;
-
+    /* margin: 10px 27px; */
     text-align: right;
+    margin-bottom: 30px;
 }
 
 .pages li
 {
     font-size: 16px;
-
     display: inline-block;
-
     vertical-align: top;
+    margin-right: 2px;
+    text-align: center;
+}
+.pages li:last-child {
+    margin-right: 0px;
+}
+
+a.page-link,
+a.page-link-prev,
+a.page-link-next {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border:none;
+    color:#fff;
+    line-height: 26px;
+}
+
+a.page-link:hover {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+a.page-link.current, a.page-link:active {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    border-radius: 50%;
+}
+
+a.page-link.disabled,
+a.page-link.disabled:hover {
+    color: rgba(255, 255, 255, 0.2);
+    background: none;
+    cursor: default;
+}
+
+.page-link-prev, .page-link-next {
+    position: relative;
+}
+.page-link-prev:before,
+.page-link-prev:after,
+.page-link-next:before,
+.page-link-next:after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 0px;
+    top: 8px;
+    left: 3px;
+    border-top: 2px solid #fff;
+    transform: rotate(-40deg);
+}
+
+.page-link-prev:after {
+    top: 15px;
+    transform: rotate(40deg);
+}
+
+.page-link-next:before {
+    transform: rotate(40deg);
+    top: 9px;
+    left: 15px;
+}
+
+.page-link-next:after {
+    transform: rotate(-40deg);
+    top: 15px;
+    left: 15px;
+}
+
+a.page-link-prev.disabled:before,
+a.page-link-prev.disabled:after,
+a.page-link-next.disabled:before,
+a.page-link-next.disabled:after {
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: default;
+    background: none;
+}
+
+a.page-link-prev:hover,
+a.page-link-next:hover
+ {
+    opacity: 0.5;
+    background: none;
+}
+
+a.page-link-prev.disabled:hover,
+a.page-link-next.disabled:hover {
+    cursor: default;
 }
 
 .list-item
