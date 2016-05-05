@@ -1051,12 +1051,36 @@ a.tel-number:hover {
     padding-top: 5px;
 }
 
+.item:before {
+    content: "";
+    width: 278px;
+    height: 406px;
+    position: absolute;
+    z-index: 100;
+    top:0px;
+    left: -6px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: none;
+}
+
+.item:hover:before {
+    display: block;
+} 
+
+a.btn-view {
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+}
+
+
 .item:nth-child(4n)
 {
     margin-right: 0;
 }
 
-.item-bestseller::before {
+.item-bestseller::after {
     content: "";
     position: absolute;
     top:0px;
@@ -1084,6 +1108,8 @@ a.tel-number:hover {
 
 .item-pic {
     margin-bottom: 15px;
+    /* position: relative; */
+    /* z-index: 10; */
 }
 
 .rub {
@@ -1095,19 +1121,17 @@ a.tel-number:hover {
 .btn-view {
     display: none;
     position: absolute;
-    top:auto;
-    left:0px;
+    bottom: -21px;
+    left: 30px;
+    padding: 10px 20px;
+    /* font-size: 16px; */
+    z-index: 100;
 }
 
-.item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
-.item:hover a {
+/*.item:hover a {
     border:none;
     color:#fff;
-}
+}*/
 
 .item:hover .btn-view {
     display:block;
