@@ -48,8 +48,8 @@
             <input type="password" placeholder="Пароль">
             <input type="submit" value="Войти" class="btn">
             <div class="login-form-links">
-              <a href="#">Забыли пароль</a>
-              <a href="#">Новая регистрация</a>
+              <span><a href="#">Забыли пароль</a></span>
+              <span><a href="#">Новая регистрация</a></span>
             </div>
           </form>
           </li>
@@ -183,13 +183,6 @@
             (с 10 до 20 ежедневно)
           </p>
           <a href="#" class="btn btn-feedback">Форма обратной связи</a>
-          <form action="#" method="post" id="form-feedback" class="form-feedback">
-            <p>Мы обязательно вам ответим!</p>
-            <input type="text" placeholder="Как вас зовут?">
-            <input type="email" placeholder="Ваша почта для ответа">
-            <textarea placeholder="Напишите что-нибудь..."></textarea>
-            <input type="submit" value="Отправить" class="btn feedback-btn">
-          </form>
         </div>
       </div>
       </main>
@@ -217,6 +210,21 @@
           <p class="made">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </div>
       </footer>
+
+    </div>
+    <div class="modal">
+    <form action="#" method="post" id="form-feedback" class="modal-form form-feedback">
+      <button class="form-feedback-exit"></button>
+      <p>Мы обязательно вам ответим!</p>
+      <!-- <span class="form-tip">Как вас зовут?</span> -->
+      <input type="text" placeholder="Как вас зовут?">
+      <input type="email" placeholder="Ваша почта для ответа">
+      <!-- <span class="form-tip">Ваша почта для ответа</span> -->
+      <textarea placeholder="Напишите что-нибудь..."></textarea>
+      <!-- <span class="form-tip">Напишите что-нибудь...</span> -->
+
+      <input type="submit" value="Отправить" class="btn feedback-btn">
+    </form>
     </div>
   </body>
 </html>
