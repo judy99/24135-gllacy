@@ -584,6 +584,7 @@ h2
 {
     width: 1200px;
     margin: 0 auto;
+    outline: 1px solid yellowgreen;
 }
 
 .hidden
@@ -607,7 +608,7 @@ h2
 
 .btn:hover {
     background-image: linear-gradient(0deg, #e36f58, #dc715d);
-    box-shadow: 0 3px 1px -1px #ac1000;
+    box-shadow: 0 2px 2px -1px #ac1000;
     color: #fff;
     border:none;
     cursor: pointer;
@@ -692,6 +693,9 @@ textarea::-webkit-input-placeholder
 /*******************/
 .main-header {
     position: relative;
+    outline: 1px solid red;
+    /* width: 1246px; */
+    padding-right: 27px;
 }
 
 .index-logo
@@ -849,18 +853,18 @@ a.main-menu-link.current {
 .user-block
 {
     float: right;
-    width: 263px;
+    /* width: 263px; */
     font-size: 0px;
     padding-top: 23px;
     position: relative;
-    padding-right: 27px;
+    /* padding-right: 24px; */
 }
 
 .user-block > li {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: 12px;
+    margin-right: 10px;
     font-size: 0px;
     padding-bottom: 5px;
 }
@@ -883,13 +887,13 @@ a.main-menu-link.current {
     position: absolute;
     background: url('../img/sprite.png') no-repeat 0 -164px;
     top: 6px;
-    left: 14px;
+    left: 18px;
     width: 21px;
     height: 20px;
 }
 
 .cart {
-    padding-left: 42px;
+    padding-left: 45px;
     padding-top: 7px;
     padding-right: 20px;
     padding-bottom: 9px;
@@ -913,8 +917,8 @@ a.cart-empty:hover {
 .search-icon:before
 {
     position: absolute;
-    top: 9px;
-    left: 9px;
+    top: 7px;
+    left: 7px;
     display: inline-block;
     width: 17px;
     height: 17px;
@@ -993,7 +997,7 @@ a.cart-empty:hover {
 }
 
 .login {
-    padding-left: 41px;
+    padding-left: 40px;
     padding-bottom: 9px;
     padding-top: 7px;
     padding-right: 14px;
@@ -1416,6 +1420,10 @@ a.slider-active:hover,
     width: 560px;
 }
 
+.misc-right-col {
+    width: 538px;
+}
+
 .misc-left-col
 {
     float: left;
@@ -1424,13 +1432,16 @@ a.slider-active:hover,
 .misc-right-col
 {
     float: right;
+    background: url("../img/post-pattern.png") #efeeec;
+    border-radius: 6px;
+    padding: 7px;
 }
 
 .subscribe
 {
-    border: 6px solid red;
-    /* border-image: url("../img/post-pattern.png") 5 0 7 5 repeat round; */
+    border-radius: 6px;
     background-color: #efeeec;
+    padding-bottom: 35px;
 }
 
 .new-post
@@ -1465,8 +1476,8 @@ a.slider-active:hover,
 
 .subscribe-input
 {
-    margin-bottom: 34px;
-
+    /* margin-bottom: 34px; */
+    /* padding-bottom: 19px; */
     white-space: nowrap;
 }
 
@@ -2475,4 +2486,8 @@ textarea:focus::-moz-placeholder
 filter-sort option {
     position: relative;
     top: 20px;
+}
+
+.cart-empty {
+    padding-right: 35px;
 }
