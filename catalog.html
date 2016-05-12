@@ -59,18 +59,24 @@
           <form action="#" method="post" id="cart-form" class="cart-form shadow">
             <table class="cart-list">
               <tr class="cart-item">
-                <td><input type="checkbox" name="selected-items[]" id="item1"></td>
-                <td><img src="img/goods/thumbs/1.png" alt="thumb1"></td>
-                <td><label for="item1">Пломбир с апельсиновым джемом</label></td>
-                <td>1,5 кг х <span class="">200 руб.</span></td>
-                <td>300 руб.</td>
+                <td class="cart-item-check">
+                  <input type="checkbox" name="selected-items[]" id="item1" class="cart-checkbox" checked>
+                  <span class="checkbox-indicator"></span>
+                </td>
+                <td class="cart-item-thumb"><img src="img/goods/thumbs/1.png" alt="thumb1"></td>
+                <td class="cart-item-title"><label for="item1">Пломбир с апельсиновым джемом</label></td>
+                <td class="cart-item-price-kg">1,5 кг х <span class="">200 руб.</span></td>
+                <td class="cart-item-price">300 руб.</td>
               </tr>
               <tr class="cart-item">
-                <td><input type="checkbox" name="selected-items[]" id="item2"></td>
-                <td><img src="img/goods/thumbs/2.png" alt="thumb1"></td>
-                <td><label for="item2">Клубничный пломбир с присыпкой из белого шоколада</label></td>
-                <td>1,5 кг х <span>300 руб.</span></td>
-                <td>450 руб.</td>
+                <td class="cart-item-check">
+                  <input type="checkbox" name="selected-items[]" id="item2" class="cart-checkbox" checked>
+                  <span class="checkbox-indicator"></span>
+                </td>
+                <td class="cart-item-thumb"><img src="img/goods/thumbs/2.png" alt="thumb1"></td>
+                <td class="cart-item-title"><label for="item2">Клубничный пломбир с присыпкой из белого шоколада</label></td>
+                <td class="cart-item-price-kg">1,5 кг х <span>300 руб.</span></td>
+                <td class="cart-item-price">450 руб.</td>
               </tr>
               <tr class="cart-total-price">
                 <td colspan="5">Итого: 750 руб.</td>
@@ -266,7 +272,7 @@
         </ul>
       </section>
       </main>
-      <footer class="footer footer-catalog clearfix">
+      <footer class="footer clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#"></a>
           <a class="social-btn social-btn-inst" href="#"></a>
