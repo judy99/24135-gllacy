@@ -514,7 +514,7 @@ body
     line-height: 22px;
     color: #323232;
     background-color: #849d8f;
-    /* background-image: radial-gradient(circle farthest-corner at top, red 0%, orange 20%); */
+    /*background-image: radial-gradient(circle farthest-corner at top, red 0%, orange 20%); */
     position: relative;
 }
 
@@ -584,9 +584,9 @@ h2
 .site-wrapper {
     min-width: 1200px;
     background-color: #849d8f;
-    background-image: url("../img/slider/ice-01.png");
+    background-image: url("../img/slider/pic-01.png"), radial-gradient(circle  at 50% 250px, rgba(255, 255, 255, 0.5) 0%, #849d8f 25%);
     background-repeat: no-repeat;
-    background-position: center 0px;
+    background-position: center 80px, center 0px;
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -602,11 +602,11 @@ h2
 
 .site-wrapper:before,
 .site-wrapper:after {
-  background-image: url("../img/slider/ice-02.png");
+    background-image: url("../img/slider/pic-02.png"), radial-gradient(circle  at 50% 250px, rgba(255, 255, 255, 0.5) 0%, #849d8f 25%);
 }
 
 .site-wrapper:after {
-  background-image: url("../img/slider/ice-03.png");
+    background-image: url("../img/slider/pic-03.png"), radial-gradient(circle  at 50% 250px, rgba(255, 255, 255, 0.5) 0%, #849d8f 25%);
 }
 
 
@@ -1255,18 +1255,17 @@ a.btn-view {
 
 #btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/slider/ice-01.png");
-  /* background-position-y: 50px; */
+  background-image: url("../img/slider/pic-01.png"), radial-gradient(circle  at 50% 250px, rgba(255, 255, 255, 0.5) 0%, #849d8f 25%);
 }
 
 #btn-2:checked ~ .site-wrapper {
-  background-color: #8996a6;
-  background-image: url("../img/slider/ice-02.png");
+    background-color: #8996a6;
+    background-image: url("../img/slider/pic-02.png"), radial-gradient(circle  at 50% 250px, rgba(255, 255, 255, 0.5) 0%, #8996a6 25%);
 }
 
 #btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/slider/ice-03.png");
+  background-image: url("../img/slider/pic-03.png"), radial-gradient(circle  at 50% 250px, rgba(255, 255, 255, 0.5) 0%, #9d8b84 25%);
 }
 
 .slider-controls label {
