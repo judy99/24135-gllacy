@@ -13,7 +13,7 @@
     <input class="slider-btn-control" type="radio" id="btn-2" name="toggle">
     <input class="slider-btn-control" type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
-    <div class="content-wrapper container">
+    <div class="content-wrapper">
       <header class="main-header clearfix">
         <div class="index-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
@@ -202,8 +202,8 @@
         </div>
       </div>
       <div class="map">
-        <img src="img/map.jpg" width="1200" height="430" alt="Карта">
-        <!-- <img  class="pin" src="img/placehold.it" width="218" height="142" alt="Мы здесь"> -->
+        <!-- <img src="img/map.jpg" width="1200" height="430" alt="Карта" class="hidden-map"> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177383!2d30.32088925140606!3d59.938796868959315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2snl!4v1463140784935" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="contact">
           <p class="contact-address">
             Адрес главного офиса и офлайн магазина:
@@ -250,18 +250,121 @@
       <button class="form-feedback-exit"></button>
       <p>Мы обязательно вам ответим!</p>
       
-      <!-- <label class="form-tip" for="tip-name">Как вас зовут?</label> -->
-      <input type="text" placeholder="Как вас зовут?" class="tip-name">
+<!--       <span class="tip" id="tip1">Как вас зовут?</span>
+      <input type="text" name="username" placeholder="Как вас зовут?" class="form-elem tip-name">
       
+      <span class="tip" id="tip2">Ваша почта для ответа</span>
+      <input type="email" class="form-elem tip-email" name="email" placeholder="Ваша почта для ответа">
+      
+      <span class="tip" id="tip3">Напишите что-нибудь...</span>
+      <textarea class="form-elem tip-text" placeholder="Напишите что-нибудь..." name = "text"></textarea>
+ -->
 
-      <input type="email" placeholder="Ваша почта для ответа">
-      <!-- <span class="form-tip">Ваша почта для ответа</span> -->
-      <textarea placeholder="Напишите что-нибудь..."></textarea>
-      <!-- <span class="form-tip">Напишите что-нибудь...</span> -->
+<div class="group">
+ <input type="text" name="username" class="form-elem tip-name">
+ <label class="tip" id="tip1">Как вас зовут?</label>
+ </div>
+ 
+<div class="group">
+ <input type="email" class="form-elem tip-email" name="email">
+ <label class="tip" id="tip2">Ваша почта для ответа</label>
+</div>
 
-      <input type="submit" value="Отправить" class="btn feedback-btn">
+<div class="group"> 
+ <textarea class="form-elem tip-text" name = "text"></textarea>
+ <label class="tip" id="tip3">Напишите что-нибудь...</label>
+</div>
+
+      <input type="submit" value="Отправить" class="btn btn-form-feedback">
     </form>
     </div>
+
+    <!-- scripts -->
+
+    <script type="text/javascript">
+      var popup = document.querySelector(".modal");
+      // var elements = popup.querySelectorAll(".form-elem");
+      var tip1 = popup.querySelector("#tip1");
+      var tip2 = popup.querySelector("#tip2");
+      var tip3 = popup.querySelector("#tip3");
+
+      var link = document.querySelector(".btn-feedback");
+      var close = document.querySelector(".form-feedback-exit");
+
+      var form = popup.querySelector("form");
+      var username = popup.querySelector("[name=username]");
+      var email = popup.querySelector("[name=email]");
+      var text = popup.querySelector("[name=text]");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-show");
+      });
+
+
+      close.addEventListener("click", function(event) {
+          event.preventDefault();
+          popup.classList.remove("modal-show");
+      });
+
+      // for (var i = 0; i < elements.length; i++) {
+      // elements[i].addEventListener("click", function(event) {
+      //       event.preventDefault();
+      //       console.log("tip = " + tips[i] + ", \n");
+      //       tips[i].classList.add("tip-show");
+      //   });
+      // }
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
+
+      form.addEventListener("submit", function(event) {
+              if (!username.value || !email.value || !text.value) {
+            event.preventDefault();
+            console.log("Нужно ввести все данные.");
+          }
+      });
+
+      // username.addEventListener("focus", function(event) {
+      //     event.preventDefault();
+      //     tip1.classList.add("tip-show");  
+      // });
+      // username.addEventListener("blur", function(event) {
+      //     event.preventDefault();
+      //     tip1.classList.remove("tip-show");  
+      // });
+
+      //   email.addEventListener("focus", function(event) {
+      //     event.preventDefault();
+      //     tip2.classList.add("tip-show");  
+      // });
+      //   email.addEventListener("blur", function(event) {
+      //     event.preventDefault();
+      //     tip2.classList.remove("tip-show");  
+      // });
+
+      //   text.addEventListener("focus", function(event) {
+      //     event.preventDefault();
+      //     tip3.classList.add("tip-show");  
+      // });
+      //   text.addEventListener("blur", function(event) {
+      //     event.preventDefault();
+      //     tip3.classList.remove("tip-show");  
+      // });
+
+      username.addEventListener("blur", function(event) {
+          event.preventDefault();
+          if (username.value) {
+            tip1.classList.add("tip-color");
+          }
+      });
+
+
+    </script>
 
   </body>
 </html>
