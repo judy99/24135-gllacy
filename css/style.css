@@ -2382,10 +2382,10 @@ a.htmlacademy-logo {
 
 .modal-form {
    position: absolute;
-   left: 50%;
+   /* left: 50%; */
    /* top: 340px; */
    box-sizing: border-box;
-   transform: translateX(-50%);
+   /* transform: translateX(-50%); */
 }
 .form-feedback
 {
@@ -2396,7 +2396,10 @@ a.htmlacademy-logo {
     border-radius: 10px;
     background-color: #f7efeb;
     /* bottom: 200px; */
-    top: 50px;
+    /* top: 50px; */
+    left: 50%;
+    /* transform: translateX(-50%); */
+    animation: bounce forwards 0.6s;
 }
 .form-feedback p
 {
@@ -2501,15 +2504,13 @@ textarea:focus::-moz-placeholder
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
-    /* z-index: 10; */
 }
 
 .modal-show {
     display:block;
-    animation: bounce 0.6s;
 }
 
-.form-feedback input[type="text"]:focus .form-feedback input[type="text"]:before {
+/*.form-feedback input[type="text"]:focus .form-feedback input[type="text"]:before {
     content: "123";
     width: 20px;
     height: 10px;
@@ -2517,7 +2518,7 @@ textarea:focus::-moz-placeholder
     position: absolute;
     top:-10px;
     left:0px;
-}
+}*/
 
 .form-tip {
     font-size: 11px;
@@ -2581,5 +2582,5 @@ textarea:focus::-moz-placeholder
     0% { transform: translateY(-2000px);}
     70% { transform: translateY(30px);}
     90% { transform: translateY(-10px);}
-    100% { transform: translateY(0px);}    
+    100% { transform: translateY(0px); }    
 }
