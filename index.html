@@ -284,9 +284,14 @@
     <script type="text/javascript">
       var popup = document.querySelector(".modal");
       // var elements = popup.querySelectorAll(".form-elem");
+      // var elements_array = Array.prototype.slice.call(elements);
+
       var tip1 = popup.querySelector("#tip1");
       var tip2 = popup.querySelector("#tip2");
       var tip3 = popup.querySelector("#tip3");
+
+      // var tips = popup.querySelectorAll(".tip");
+      // var tips_array = Array.prototype.slice.call(tips);
 
       var link = document.querySelector(".btn-feedback");
       var close = document.querySelector(".form-feedback-exit");
@@ -314,6 +319,7 @@
       //       tips[i].classList.add("tip-show");
       //   });
       // }
+
       window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
           if (popup.classList.contains("modal-show")) {
@@ -329,40 +335,37 @@
           }
       });
 
-      // username.addEventListener("focus", function(event) {
-      //     event.preventDefault();
-      //     tip1.classList.add("tip-show");  
-      // });
-      // username.addEventListener("blur", function(event) {
-      //     event.preventDefault();
-      //     tip1.classList.remove("tip-show");  
-      // });
-
-      //   email.addEventListener("focus", function(event) {
-      //     event.preventDefault();
-      //     tip2.classList.add("tip-show");  
-      // });
-      //   email.addEventListener("blur", function(event) {
-      //     event.preventDefault();
-      //     tip2.classList.remove("tip-show");  
-      // });
-
-      //   text.addEventListener("focus", function(event) {
-      //     event.preventDefault();
-      //     tip3.classList.add("tip-show");  
-      // });
-      //   text.addEventListener("blur", function(event) {
-      //     event.preventDefault();
-      //     tip3.classList.remove("tip-show");  
-      // });
 
       username.addEventListener("blur", function(event) {
           event.preventDefault();
           if (username.value) {
             tip1.classList.add("tip-color");
           }
+          else {
+            tip1.classList.remove("tip-color");
+
+          }
       });
 
+      email.addEventListener("blur", function(event) {
+          event.preventDefault();
+          if (email.value) {
+            tip2.classList.add("tip-color");
+          }
+          else {
+            tip2.classList.remove("tip-color");
+          }
+      });
+
+      text.addEventListener("blur", function(event) {
+          event.preventDefault();
+          if (text.value) {
+            tip3.classList.add("tip-color");
+          }
+          else {
+            tip3.classList.remove("tip-color");
+          }
+      });
 
     </script>
 

@@ -2249,7 +2249,7 @@ a.page-link-next.disabled:hover
     width: 32px;
     height: 32px;
     border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    border-radius: 50%;
     position: relative;
     margin-right: 16px;
     box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
@@ -2262,13 +2262,11 @@ a.social-btn, a.social-btn:hover {
 
 .social-btn:hover {
     opacity: 1;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
 }
 
-.social-btn:active {
-    /* todo */
-    /*box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.5);*/
-    /*box-shadow: inset 0 3px 0 3px black;*/
-    /*inset 3px 3px 0px -3px #000;*/
+.social-btn:active .social-btn:before {
+    box-shadow: inset 0px 1px 2px 0px #eee;
 }
 
 .social-btn:before {
@@ -2385,18 +2383,20 @@ a.htmlacademy-logo {
 .modal-form {
    position: absolute;
    left: 50%;
-   top: 340px;
+   /* top: 340px; */
    box-sizing: border-box;
    transform: translateX(-50%);
 }
 .form-feedback
 {
+    position: fixed;
     width: 478px;
     height: 443px;
     padding: 20px 24px;
     border-radius: 10px;
     background-color: #f7efeb;
-    top: 338px;
+    /* bottom: 200px; */
+    top: 50px;
 }
 .form-feedback p
 {
@@ -2501,6 +2501,7 @@ textarea:focus::-moz-placeholder
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
+    /* z-index: 10; */
 }
 
 .modal-show {
@@ -2573,7 +2574,7 @@ textarea:focus::-moz-placeholder
 .tip-color {
   top: -16px !important;
   font-size:11px !important;
-  color: red !important; 
+  color: #999999 !important; 
 }
 
 @keyframes bounce {
