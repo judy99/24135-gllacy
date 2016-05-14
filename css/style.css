@@ -1151,15 +1151,14 @@ a.btn-view {
 }
 
 .slider-btn, a.slide-btn {
-    font-size: 31px;
     line-height: 43px;
-    font-weight: 600;
     display: inline-block;
-    font-family: 'robotobold', sans-serif;
     padding: 10px 40px;
     border-radius: 33px;
-    font: 31px bold #fff 'robotobold', sans-serif;
+    font-size: 31px;
+    font-family: "robotobold",sans-serif;
 }
+
 /*******************/
 /* promo block */
 /*******************/

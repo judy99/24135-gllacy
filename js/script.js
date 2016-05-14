@@ -46,7 +46,7 @@
       }
 
       var inputs = document.querySelectorAll(".form-elem");
-      for (i=0; i<inputs.length; i++) {
+      for (var i=0; i<inputs.length; i++) {
         inputs[i].addEventListener("blur", function(event) {
             event.preventDefault();
             this.nextElementSibling.classList.remove("tip-color");
