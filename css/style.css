@@ -840,6 +840,10 @@ a.cart-empty:hover {
     width: 341px;
 }
 
+.search-form .group {
+    margin-bottom: 0px;
+}
+
 .search-form input[type="search"], .login-form input[type="email"] {
     width: 311px;
     border-radius: 5px;
@@ -862,6 +866,9 @@ a.cart-empty:hover {
     border-radius: 5px;
     z-index: 100;
 }
+.login-form .group {
+    margin-bottom: 20px;
+}
 
 .login-form input[type="email"],
 .login-form input[type="password"] {
@@ -871,7 +878,7 @@ a.cart-empty:hover {
     padding: 9px 3px 9px 7px;
     line-height: 24px;
     font-size: 14px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .user-block li:hover .login-form {
@@ -1328,7 +1335,12 @@ a.btn-view {
     color: #e84d37;
 }
 
-.subscribe-input input {
+.subscribe .group {
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.subscribe-input input, .subscribe-input .group {
     vertical-align: top;
 }
 
@@ -2301,7 +2313,8 @@ textarea:focus::-moz-placeholder {
     padding-right: 35px;
 }
 
-.form-feedback label {
+.form-feedback label, .search-form label,
+.login-form label, .subscribe label {
     color: #999;
     font-size: 16px;
     font-weight: normal;
@@ -2311,12 +2324,16 @@ textarea:focus::-moz-placeholder {
     top: 13px;
 }
 
+.subscribe label {
+    left: 30px;
+}
+
 .group {
     position: relative;
     margin-bottom: 22px;
 }
 
-.form-elem:focus ~ label {
+.search-form:focus ~ label, .form-elem:focus ~ label {
     top: -16px;
     font-size: 11px;
     color: #5b9ddf;
