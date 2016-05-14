@@ -28,8 +28,8 @@
           </ul>
         </nav>
         <ul class="user-block">
-            <!-- search block -->
-            <li>
+          <!-- search block -->
+          <li>
             <a class="search-icon" href="#">
               <span class="hidden">Найти</span>
             </a>
@@ -49,43 +49,43 @@
                 <span><a href="#">Новая регистрация</a></span>
               </div>
             </form>
-            </li>
+          </li>
           
           <!-- cart block -->
           <li>
-          <a class="cart cart-noempty btn-plane">2 товара</a>
-          
-          <!-- form product list -->
-          <form action="#" method="post" id="cart-form" class="cart-form shadow">
-            <table class="cart-list">
-              <tr class="cart-item">
-                <td class="cart-item-check">
-                  <input type="checkbox" name="selected-items[]" id="item1" class="cart-checkbox" checked>
-                  <span class="checkbox-indicator"></span>
-                </td>
-                <td class="cart-item-thumb"><img src="img/goods/thumbs/1.png" alt="thumb1"></td>
-                <td class="cart-item-title"><label for="item1">Пломбир с апельсиновым джемом</label></td>
-                <td class="cart-item-price-kg">1,5 кг х <span class="">200 руб.</span></td>
-                <td class="cart-item-price">300 руб.</td>
-              </tr>
-              <tr class="cart-item">
-                <td class="cart-item-check">
-                  <input type="checkbox" name="selected-items[]" id="item2" class="cart-checkbox" checked>
-                  <span class="checkbox-indicator"></span>
-                </td>
-                <td class="cart-item-thumb"><img src="img/goods/thumbs/2.png" alt="thumb1"></td>
-                <td class="cart-item-title"><label for="item2">Клубничный пломбир с присыпкой из белого шоколада</label></td>
-                <td class="cart-item-price-kg">1,5 кг х <span>300 руб.</span></td>
-                <td class="cart-item-price">450 руб.</td>
-              </tr>
-              <tr class="cart-total-price">
-                <td colspan="5">Итого: 750 руб.</td>
-              </tr>
-            </table>
-            <input type="submit" value="Оформить заказ" class="btn btn-order">
-          </form>
-          
-        </li>
+            <a class="cart cart-noempty btn-plane">2 товара</a>
+            
+            <!-- form product list -->
+            <form action="#" method="post" id="cart-form" class="cart-form shadow">
+              <table class="cart-list">
+                <tr class="cart-item">
+                  <td class="cart-item-check">
+                    <input type="checkbox" name="selected-items[]" id="item1" class="cart-checkbox" checked>
+                    <span class="checkbox-indicator"></span>
+                  </td>
+                  <td class="cart-item-thumb"><img src="img/goods/thumbs/1.png" alt="thumb1"></td>
+                  <td class="cart-item-title"><label for="item1">Пломбир с апельсиновым джемом</label></td>
+                  <td class="cart-item-price-kg">1,5 кг х <span class="">200 руб.</span></td>
+                  <td class="cart-item-price">300 руб.</td>
+                </tr>
+                <tr class="cart-item">
+                  <td class="cart-item-check">
+                    <input type="checkbox" name="selected-items[]" id="item2" class="cart-checkbox" checked>
+                    <span class="checkbox-indicator"></span>
+                  </td>
+                  <td class="cart-item-thumb"><img src="img/goods/thumbs/2.png" alt="thumb1"></td>
+                  <td class="cart-item-title"><label for="item2">Клубничный пломбир с присыпкой из белого шоколада</label></td>
+                  <td class="cart-item-price-kg">1,5 кг х <span>300 руб.</span></td>
+                  <td class="cart-item-price">450 руб.</td>
+                </tr>
+                <tr class="cart-total-price">
+                  <td colspan="5">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <input type="submit" value="Оформить заказ" class="btn btn-order">
+            </form>
+            
+          </li>
         </ul>
         <div class="company-info">
           <div class="open-hours">С 10 до 20, ежедневно</div>
@@ -102,86 +102,86 @@
         <h1>Сливочное мороженое</h1>
         <form id="filters" class="filters" action="#" method="post">
           <div class="filter-row">
-          <div class="filter-set">
-            <label>
-              <span class="filter-title">Сортировка:</span>
-              <div class="select-wrapper">
-              <select class="btn-plane filter filter-sort" id="filter-sort">
-                <option value="best" selected>по популярности</option>
-                <option value="high-price-first">сначала недорогие</option>
-                <option value="low-price-first">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-              </select>
+            <div class="filter-set">
+              <label>
+                <span class="filter-title">Сортировка:</span>
+                <div class="select-wrapper">
+                  <select class="btn-plane filter filter-sort" id="filter-sort">
+                    <option value="best" selected>по популярности</option>
+                    <option value="high-price-first">сначала недорогие</option>
+                    <option value="low-price-first">сначала дорогие</option>
+                    <option value="fat">по жирности</option>
+                  </select>
+                </div>
+              </label>
             </div>
-            </label>
-          </div>
-          
-          <div class="filter-set">
+            
+            <div class="filter-set">
               <span class="filter-title">Цена: 100 руб. - 500 руб.</span>
               <div class="btn-plane filter filter-price">
                 <div class="scale"></div>
                 <div class="bar"></div>
                 <a href="#" class="toggle min-toggle"></a>
-                <a href="#" class="toggle max-toggle"></a> 
+                <a href="#" class="toggle max-toggle"></a>
               </div>
-          </div>
-          
-          <div class="filter-set">
-            <span class="filter-title">Жирность:</span>
-            <fieldset class="btn-plane filter filter-fat">
-              <label>
-                <input type="radio" class="filter-radio" name="fat" value="zero" checked disabled>
-                <span class="radio-indicator"></span>
-                0%
-              </label>
-              <label>
-                <input type="radio" class="filter-radio" name="fat" value="to-ten" checked>
-                <span class="radio-indicator"></span>
-                до 10%
-              </label>
-              <label>
-                <input type="radio" class="filter-radio" name="fat" value="to-thirty">
-                <span class="radio-indicator"></span>
-                до 30%
-              </label>
-              <label>
-                <input type="radio" class="filter-radio" name="fat" value="over-thirty" disabled>
-                <span class="radio-indicator"></span>
-                выше 30%
-              </label>
-            </fieldset>
-          </div>
+            </div>
+            
+            <div class="filter-set">
+              <span class="filter-title">Жирность:</span>
+              <fieldset class="btn-plane filter filter-fat">
+                <label>
+                  <input type="radio" class="filter-radio" name="fat" value="zero" checked disabled>
+                  <span class="radio-indicator"></span>
+                  0%
+                </label>
+                <label>
+                  <input type="radio" class="filter-radio" name="fat" value="to-ten" checked>
+                  <span class="radio-indicator"></span>
+                  до 10%
+                </label>
+                <label>
+                  <input type="radio" class="filter-radio" name="fat" value="to-thirty">
+                  <span class="radio-indicator"></span>
+                  до 30%
+                </label>
+                <label>
+                  <input type="radio" class="filter-radio" name="fat" value="over-thirty" disabled>
+                  <span class="radio-indicator"></span>
+                  выше 30%
+                </label>
+              </fieldset>
+            </div>
           </div>
           <div class="filter-row">
-          <div class="filter-set">
-            <span class="filter-title">Наполнители:</span>
-            <fieldset class="btn-plane filter filter-stuff">
-              <label>
-                <input class="filter-checkbox" type="checkbox" name="stuff-choco" checked>шоколадные
-                <span class="checkbox-indicator"></span>
-              </label>
-              <label>
-                <input class="filter-checkbox" type="checkbox" name="stuff-sugar" checked>сахарные присыпки
-                <span class="checkbox-indicator"></span>
-              </label>
-              <label>
-                <input class="filter-checkbox" type="checkbox" disabled name="stuff-fruit">фрукты
-                <span class="checkbox-indicator"></span>
-              </label>
-              <label>
-                <input class="filter-checkbox" type="checkbox" name="stuff-syrup">сиропы
-                <span class="checkbox-indicator"></span>
-              </label>
-              <label>
-                <input class="filter-checkbox" type="checkbox" name="stuff-jam">джемы
-                <span class="checkbox-indicator"></span>
-              </label>
-            </fieldset>
+            <div class="filter-set">
+              <span class="filter-title">Наполнители:</span>
+              <fieldset class="btn-plane filter filter-stuff">
+                <label>
+                  <input class="filter-checkbox" type="checkbox" name="stuff-choco" checked>шоколадные
+                  <span class="checkbox-indicator"></span>
+                </label>
+                <label>
+                  <input class="filter-checkbox" type="checkbox" name="stuff-sugar" checked>сахарные присыпки
+                  <span class="checkbox-indicator"></span>
+                </label>
+                <label>
+                  <input class="filter-checkbox" type="checkbox" disabled name="stuff-fruit">фрукты
+                  <span class="checkbox-indicator"></span>
+                </label>
+                <label>
+                  <input class="filter-checkbox" type="checkbox" name="stuff-syrup">сиропы
+                  <span class="checkbox-indicator"></span>
+                </label>
+                <label>
+                  <input class="filter-checkbox" type="checkbox" name="stuff-jam">джемы
+                  <span class="checkbox-indicator"></span>
+                </label>
+              </fieldset>
+            </div>
+            <div class="filter-set">
+              <input type="submit" value="Применить" class="btn filter-btn btn-plane">
+            </div>
           </div>
-          <div class="filter-set">
-          <input type="submit" value="Применить" class="btn filter-btn btn-plane">
-        </div>
-        </div>
         </form>
         <!-- catalog -->
         <div class="catalog">
