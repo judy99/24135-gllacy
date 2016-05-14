@@ -31,39 +31,7 @@ font-weight: normal;
 font-style: normal;
 src: url('../fonts/Roboto/robotobold.woff') format('woff');
 }
-/* temp block */
-.index-logo,
-.main-nav,
-.user-block,
-.container,
-.slider-points,
-.about-product-content,
-.about-product-left,
-.about-product-right
-{
-/*outline: 1px solid red;*/
-}
-.sub-nav,
-.filters,
-.catalog,
-.pages,
-.footer,
-.slider-pic,
-.promo-content,
-.misc,
-.company-info
-{
-/*outline: 1px solid blue;*/
-}
-.item,
-.footer-social,
-.footer-nav,
-.footer-copyright,
-.misc-content
-{
-/*outline: 1px solid yellow;*/
-}
-/* end temp block  */
+
 /*******************/
 /*******************/
 /**************************************************************************************************/
@@ -399,9 +367,7 @@ opacity: 0.54;
 -webkit-appearance: button; /* 1 */
 font: inherit; /* 2 */
 }
-/**************************************************************************************************/
-/**************************************************************************************************/
-/**************************************************************************************************/
+/* end normalize.css */
 /**************************************************************************************************/
 select:focus, input[type="submit"]:focus, input[type="button"]:focus, button:focus, input[type="text"]:focus,
 input[type="email"]:focus, textarea:focus, input[type="search"]:focus, input[type="password"]:focus {
@@ -1464,15 +1430,8 @@ padding-top: 15px;
 margin-bottom: 7px;
 }
 .filter-set
-{
-display: inline-block;
-vertical-align: top;
-margin-right: 9px;
-}
-.filter-set label {
-color: #fff;
-position: relative;
-}
+{display: inline-block;vertical-align: top;margin-right: 9px;position: relative;}
+.filter-set label {color: #fff;position: relative;}
 .filter-title {
 display: block;
 color: #fff;
@@ -1754,18 +1713,29 @@ height: 0px;
 top: 8px;
 left: 3px;
 border-top: 2px solid #fff;
+
+-webkit-transform: rotate(-40deg);
+-ms-transform: rotate(-40deg);
 transform: rotate(-40deg);
 }
+
 .page-link-prev:after {
 top: 15px;
+-webkit-transform: rotate(40deg);
+-ms-transform: rotate(40deg);
 transform: rotate(40deg);
 }
+
 .page-link-next:before {
+-webkit-transform: rotate(40deg);
+-ms-transform: rotate(40deg);
 transform: rotate(40deg);
 top: 9px;
 left: 15px;
 }
 .page-link-next:after {
+-webkit-transform: rotate(-40deg);
+-ms-transform: rotate(-40deg);
 transform: rotate(-40deg);
 top: 15px;
 left: 15px;
@@ -2107,4 +2077,14 @@ color: #999999 !important;
 0%, 100% { transform: translateX(0px);}
 10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
 20%, 40%, 60%, 80% { transform: translateY(10px);}
+}
+
+.form-page .form-feedback {position: static;margin: 5% auto;}
+
+.form-page .group {
+    margin: 0px;
+}
+
+.form-page label {
+    position: static;
 }
