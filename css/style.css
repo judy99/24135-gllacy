@@ -376,10 +376,7 @@ height: auto;
 * 1. Correct the odd appearance in Chrome and Safari.
 * 2. Correct the outline style in Safari.
 */
-[type="search"] {
--webkit-appearance: textfield; /* 1 */
-outline-offset: -2px; /* 2 */
-}
+[type="search"] {-webkit-appearance: textfield; /* 1 */outline-offset: -2px; /* 2 */}
 /**
 * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
 */
@@ -505,21 +502,7 @@ padding: 0 2.3%;
 display: none;
 }
 .btn
-{
-font-size: 18px;
-font-weight: bold;
-line-height: 24px;
-display: inline-block;
-vertical-align: top;
-padding: 10px 23px;
-color: #fff;
-border: none;
-border-radius: 26px;
-background: #f26843;
-background: linear-gradient(0deg, #e74a35, #f26843);
-text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-}
+{font-size: 18px;font-weight: bold;line-height: 24px;display: inline-block;vertical-align: top;padding: 10px 23px;color: #fff;border: none;border-radius: 26px;background: #f26843;background: linear-gradient(0deg, #e74a35, #f26843);text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);}
 .btn:hover {
 background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -815,16 +798,7 @@ border-radius: 5px;
 z-index: 100;
 width: 341px;
 }
-.search-form input[type="search"], .login-form input[type="email"] {
-width: 311px;
-border-radius: 5px;
-background: #fff;
-color:#000;
-padding: 9px 3px 9px 7px;
-line-height: 24px;
-border: 1px solid #d3d3d2;
-font-size: 14px;
-}
+.search-form input[type="search"], .login-form input[type="email"] {width: 311px;border-radius: 5px;background: #fff;color:#000;padding: 9px 3px 9px 7px;line-height: 24px;border: none;font-size: 14px;}
 .login-form
 {
 display: none;
@@ -1263,9 +1237,13 @@ border-bottom: 2px solid #353535;
 border-bottom: 2px solid rgba(232, 77, 55, 0.3);
 color: #e84d37;
 }
-.subscribe-input
+.subscribe-input input
 {
-white-space: nowrap;
+  vertical-align: top;
+}
+.btn-subscribe {
+  padding-left: 19px;
+  padding-right: 19px;
 }
 .subscribe p
 {
@@ -1274,11 +1252,7 @@ padding-top: 28px;
 padding-left: 20px;
 }
 .subscribe input[type='email']
-{
-display: inline-block;
-width: 368px;
-margin-left: 20px;
-}
+{display: inline-block;width: 367px;margin-left: 19px;margin-right: 8px;}
 /*******************/
 /* map */
 /*******************/
@@ -1294,19 +1268,7 @@ width: 1200px;
 /* contact */
 /*******************/
 .contact
-{
-font-size: 14px;
-line-height: 20px;
-position: absolute;
-top: 60px;
-right: 2.3%;
-display: inline-block;
-box-sizing: border-box;
-width: 302px;
-padding: 26px 25px 25px;
-border-radius: 10px;
-background-color: rgba(255, 255, 255, .98);
-}
+{font-size: 14px;line-height: 20px;position: absolute;top: 60px;right: 2.3%;display: inline-block;/* box-sizing: border-box; */width: 278px;padding: 26px 0px  30px 24px;border-radius: 10px;background-color: rgba(255, 255, 255, .98);}
 .contact span
 {
 font-size: 18px;
@@ -1315,28 +1277,16 @@ display: block;
 padding-top: -3px;
 }
 .contact-address
-{
-line-height: 23px;
-margin-bottom: 18px;
-padding-right: 30px;
-}
+{line-height: 23px;margin-bottom: 20px;padding-right: 55px;/* padding-left: 24px; */}
 .contact-tel
-{
-line-height: 15px;
-margin-bottom: 26px;
-}
+{line-height: 15px;padding-right: 55px;/* padding-left: 24px; */margin-bottom: 26px;}
 .contact-tel span
 {
 padding-top: 14px;
 padding-bottom: 9px;
 }
 .btn-feedback
-{
-margin-bottom: 6px;
-padding-left: 24px;
-padding-top: 11px;
-padding-bottom: 10px;
-}
+{/* margin-left: 24px; */padding-right: 28px;padding-left: 28px;padding-top: 9px;padding-bottom: 10px;}
 a.btn-feedback {
 border:none;
 }
@@ -1994,24 +1944,18 @@ font-size: 12px;
 /*******************/
 .modal-form {
 position: absolute;
-/* left: 50%; */
-/* top: 340px; */
 box-sizing: border-box;
-/* transform: translateX(-50%); */
+animation: bounce forwards 0.6s;
 }
 .form-feedback
-{
-position: fixed;
+{position: fixed;
 width: 478px;
 height: 443px;
 padding: 20px 24px;
 border-radius: 10px;
 background-color: #f7efeb;
-/* bottom: 200px; */
-/* top: 50px; */
-left: 50%;
-/* transform: translateX(-50%); */
-animation: bounce forwards 0.6s;
+bottom: 30%;
+left: 30%;
 }
 .form-feedback p
 {
@@ -2104,20 +2048,10 @@ display: none;
 .modal-show {
 display:block;
 }
-/*.form-feedback input[type="text"]:focus .form-feedback input[type="text"]:before {
-content: "123";
-width: 20px;
-height: 10px;
-background: red;
-position: absolute;
-top:-10px;
-left:0px;
-}*/
 .form-tip {
 font-size: 11px;
 }
 .tip {
-/* visibility: hidden; */
 color: #5b9ddf;
 font-size: 11px;
 line-height: 13px;
@@ -2143,9 +2077,6 @@ position:absolute;
 pointer-events:none;
 left: 10px;
 top: 13px;
-/*  transition:0.2s ease all;
--moz-transition:0.2s ease all;
--webkit-transition:0.2s ease all;*/
 }
 .group            {
 position:relative;
@@ -2161,9 +2092,19 @@ top: -16px !important;
 font-size:11px !important;
 color: #999999 !important;
 }
+
+.modal-error {
+  animation: shake 0.6s;
+}
 @keyframes bounce {
 0% { transform: translateY(-2000px);}
 70% { transform: translateY(30px);}
 90% { transform: translateY(-10px);}
 100% { transform: translateY(0px); }
+}
+
+@keyframes shake {
+0%, 100% { transform: translateX(0px);}
+10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+20%, 40%, 60%, 80% { transform: translateY(10px);}
 }
