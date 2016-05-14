@@ -495,7 +495,6 @@ h2 {
 .container, .content-wrapper {
     width: 1146px;
     margin: 0 auto;
-    outline: 1px solid yellowgreen;
     padding: 0 2.3%;
 }
 
