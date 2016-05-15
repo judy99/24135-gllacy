@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   </head>
   <body>
     <input class="slider-btn-control" type="radio" id="btn-1" name="toggle" checked>
@@ -17,7 +19,7 @@
           </div>
           <nav class="main-nav">
             <ul class="main-menu">
-              <li>
+              <li class="main-menu-item">
                 <a href="catalog.html" class="main-menu-link">Каталог</a>
                 <ul class="main-submenu shadow">
                   <li><a href="#">Новинки</a></li>
@@ -27,34 +29,34 @@
                   <li><a href="#">Мелорин</a></li>
                 </ul>
               </li>
-              <li><a href="#" class="main-menu-link">Доставка и оплата</a></li>
-              <li><a href="#" class="main-menu-link">О Компании</a></li>
+              <li class="main-menu-item"><a href="#" class="main-menu-link">Доставка и оплата</a></li>
+              <li class="main-menu-item"><a href="#" class="main-menu-link">О Компании</a></li>
             </ul>
           </nav>
           <ul class="user-block">
             <!-- search block -->
-            <li>
+            <li class="user-block-item">
               <a class="search-icon" href="#">
                 <span class="hidden">Найти</span>
               </a>
               <form action="#" method="get" id="search" class="search-form shadow">
                 <div class="group">
-                <input type="search" class="form-elem" name="search">
-                <label class="tip" id="search_tip">Что ищем?</label>
+                  <input type="search" class="form-elem" name="search">
+                  <label class="tip" id="search_tip">Что ищем?</label>
                 </div>
               </form>
             </li>
-            <li>
+            <li class="user-block-item">
               <!-- login block -->
               <a class="login btn-plane" href="#">Вход</a>
               <form action="#" method="post" id="login" class="login-form shadow">
                 <div class="group">
-                <input type="email" class="form-elem">
-                <label class="tip">Электронная почта</label>
+                  <input type="email" class="form-elem">
+                  <label class="tip">Электронная почта</label>
                 </div>
                 <div class="group">
-                <input type="password" class="form-elem">
-                <label class="tip">Пароль</label>
+                  <input type="password" class="form-elem">
+                  <label class="tip">Пароль</label>
                 </div>
                 <input type="submit" value="Войти" class="btn">
                 <div class="login-form-links">
@@ -63,7 +65,7 @@
                 </div>
               </form>
             </li>
-            <li>
+            <li class="user-block-item">
               <!-- cart block -->
               <a class="cart cart-empty btn-plane">Пусто</a>
               
@@ -188,7 +190,7 @@
           <div class="misc misc-left-col">
             <div class="new-post">
               <p>Новое в нашем блоге</p>
-              <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+              <div class="new-post-title"><a href="#">10  способов сервировки фруктовых щербетов к столу</a></div>
             </div>
           </div>
           <div class="misc misc-right-col">
@@ -198,8 +200,8 @@
               </p>
               <div class="subscribe-input">
                 <div class="group">
-                <input type="email" class="form-elem">
-                <label class="tip">Электронная почта</label>
+                  <input type="email" class="form-elem">
+                  <label class="tip">Электронная почта</label>
                 </div>
                 <input type="submit" value="Отправить" class="btn btn-subscribe">
               </div>
