@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <div class="container inner-page">
@@ -34,22 +34,32 @@
               <span class="hidden">Найти</span>
             </a>
             <form action="#" method="get" id="search" class="search-form shadow">
-              <input type="search" placeholder="Что ищем?">
+              <div class="group">
+              <input type="search" class="form-elem" name="search">
+              <label class="tip" id="search_tip">Что ищем?</label>
+              </div>
             </form>
           </li>
           <li>
             <!-- login block -->
-            <a class="login btn-plane" href="#">Вход</a>
-            <form action="#" method="post" id="login" class="login-form shadow">
-              <input type="email" placeholder="Электронная почта">
-              <input type="password" placeholder="Пароль">
-              <input type="submit" value="Войти" class="btn">
-              <div class="login-form-links">
-                <span><a href="#">Забыли пароль</a></span>
-                <span><a href="#">Новая регистрация</a></span>
-              </div>
-            </form>
-          </li>
+              <a class="login btn-plane" href="#">Вход</a>
+              <form action="#" method="post" id="login" class="login-form shadow">
+                <div class="group">
+                <input type="email" class="form-elem">
+                <label class="tip">Электронная почта</label>
+                </div>
+                <div class="group">
+                <input type="password" class="form-elem">
+                <label class="tip">Пароль</label>
+                </div>
+                <input type="submit" value="Войти" class="btn">
+                <div class="login-form-links">
+                  <span><a href="#">Забыли пароль</a></span>
+                  <span><a href="#">Новая регистрация</a></span>
+                </div>
+              </form>
+            </li>
+            <li>
           
           <!-- cart block -->
           <li>
@@ -103,17 +113,17 @@
         <form id="filters" class="filters" action="#" method="post">
           <div class="filter-row">
             <div class="filter-set">
-              <label>
-                <span class="filter-title">Сортировка:</span>
-                <div class="select-wrapper">
-                  <select class="btn-plane filter filter-sort" id="filter-sort">
-                    <option value="best" selected>по популярности</option>
-                    <option value="high-price-first">сначала недорогие</option>
-                    <option value="low-price-first">сначала дорогие</option>
-                    <option value="fat">по жирности</option>
-                  </select>
-                </div>
-              </label>
+              
+              <span class="filter-title">Сортировка:</span>
+              <div class="select-wrapper">
+                <select class="btn-plane filter filter-sort" id="filter-sort">
+                  <option value="best" selected>по популярности</option>
+                  <option value="high-price-first">сначала недорогие</option>
+                  <option value="low-price-first">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+              </div>
+              
             </div>
             
             <div class="filter-set">
@@ -297,5 +307,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>

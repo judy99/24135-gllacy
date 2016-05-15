@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <!--
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-    -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <input class="slider-btn-control" type="radio" id="btn-1" name="toggle" checked>
@@ -41,15 +38,24 @@
                 <span class="hidden">Найти</span>
               </a>
               <form action="#" method="get" id="search" class="search-form shadow">
-                <input type="search" placeholder="Что ищем?">
+                <div class="group">
+                <input type="search" class="form-elem" name="search">
+                <label class="tip" id="search_tip">Что ищем?</label>
+                </div>
               </form>
             </li>
             <li>
               <!-- login block -->
               <a class="login btn-plane" href="#">Вход</a>
               <form action="#" method="post" id="login" class="login-form shadow">
-                <input type="email" placeholder="Электронная почта">
-                <input type="password" placeholder="Пароль">
+                <div class="group">
+                <input type="email" class="form-elem">
+                <label class="tip">Электронная почта</label>
+                </div>
+                <div class="group">
+                <input type="password" class="form-elem">
+                <label class="tip">Пароль</label>
+                </div>
                 <input type="submit" value="Войти" class="btn">
                 <div class="login-form-links">
                   <span><a href="#">Забыли пароль</a></span>
@@ -191,7 +197,10 @@
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
               </p>
               <div class="subscribe-input">
-                <input type="email" placeholder="Электронная почта">
+                <div class="group">
+                <input type="email" class="form-elem">
+                <label class="tip">Электронная почта</label>
+                </div>
                 <input type="submit" value="Отправить" class="btn btn-subscribe">
               </div>
             </form>
@@ -210,7 +219,7 @@
               <span>8 812 450-25-25</span>
               (с 10 до 20 ежедневно)
             </p>
-            <a href="#" class="btn btn-feedback">Форма обратной связи</a>
+            <a href="feedback.html" class="btn btn-feedback">Форма обратной связи</a>
           </div>
         </div>
         </main>
@@ -241,25 +250,25 @@
       </div>
     </div>
     <div class="modal">
-      <form action="#" method="post" id="form-feedback" class="modal-form form-feedback">
+      <form action="#" method="post" id="form-feedback" class="modal-form form-feedback shadow">
         <button class="form-feedback-exit"></button>
         <p>Мы обязательно вам ответим!</p>
         <div class="group">
           <input type="text" name="username" class="form-elem tip-name">
-          <label class="tip" id="tip1">Как вас зовут?</label>
+          <label class="tip">Как вас зовут?</label>
         </div>
         
         <div class="group">
           <input type="email" class="form-elem tip-email" name="email">
-          <label class="tip" id="tip2">Ваша почта для ответа</label>
+          <label class="tip">Ваша почта для ответа</label>
         </div>
         <div class="group">
           <textarea class="form-elem tip-text" name = "text"></textarea>
-          <label class="tip" id="tip3">Напишите что-нибудь...</label>
+          <label class="tip">Напишите что-нибудь...</label>
         </div>
         <input type="submit" value="Отправить" class="btn btn-form-feedback">
       </form>
     </div>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
