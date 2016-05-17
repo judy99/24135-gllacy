@@ -22,7 +22,7 @@
               <li class="main-menu-item">
                 <a href="catalog.html" class="main-menu-link">Каталог</a>
                 <ul class="main-submenu shadow">
-                  <li><a href="#">Новинки</a></li>
+                  <li class="submenu-title"><a href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -41,8 +41,8 @@
               </a>
               <form action="#" method="get" id="search" class="search-form shadow">
                 <div class="group">
-                  <input type="search" class="form-elem" name="search">
-                  <label class="tip" id="search_tip">Что ищем?</label>
+                  <input type="search" class="form-elem" name="search" id="user-block-search">
+                  <label class="tip" for="user-block-search">Что ищем?</label>
                 </div>
               </form>
             </li>
@@ -51,12 +51,12 @@
               <a class="login btn-plane" href="#">Вход</a>
               <form action="#" method="post" id="login" class="login-form shadow">
                 <div class="group">
-                  <input type="email" class="form-elem">
-                  <label class="tip">Электронная почта</label>
+                  <input type="email" class="form-elem" id="user-block-email">
+                  <label class="tip" for="user-block-email">Электронная почта</label>
                 </div>
                 <div class="group">
-                  <input type="password" class="form-elem">
-                  <label class="tip">Пароль</label>
+                  <input type="password" class="form-elem" id="user-block-pwd">
+                  <label class="tip" for="user-block-pwd">Пароль</label>
                 </div>
                 <input type="submit" value="Войти" class="btn">
                 <div class="login-form-links">
@@ -122,7 +122,7 @@
             <a class="btn promo-btn">Хочу варенье!</a>
           </div>
           <div class="promo promo-right-col">
-            <div class="promo-title">Малинка даром!</div>
+            <div class="promo-title">Шоколадки даром!</div>
             <p class="promo-text">
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.
             </p>
@@ -136,31 +136,31 @@
               <div class="item-title">
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </div>
-              <div class="item-price">310 <span class="rub">&#8381;</span><span class="kg">/кг</span></div>
+              <div class="item-price">310<span class="rub">&#32;&#8381;</span><span class="kg">/кг</span></div>
               <a href="#" class="btn btn-view">Быстрый просмотр</a>
             </li>
             <li class="item item-bestseller">
               <img class="item-pic" src="img/goods/r1/2.png" alt="item" width="267" height="267">
               <div class="item-title">
-                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               </div>
-              <div class="item-price">380 <span class="rub">&#8381;</span><span class="kg">/кг</span></div>
+              <div class="item-price">380<span class="rub">&#32;&#8381;</span><span class="kg">/кг</span></div>
               <a href="#" class="btn btn-view">Быстрый просмотр</a>
             </li>
             <li class="item item-bestseller">
               <img class="item-pic" src="img/goods/r1/3.png" alt="item" width="267" height="267">
               <div class="item-title">
-                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </div>
-              <div class="item-price">355 <span class="rub">&#8381;</span><span class="kg">/кг</span></div>
+              <div class="item-price">355<span class="rub">&#32;&#8381;</span><span class="kg">/кг</span></div>
               <a href="#" class="btn btn-view">Быстрый просмотр</a>
             </li>
             <li class="item item-bestseller">
               <img class="item-pic" src="img/goods/r1/4.png" alt="item" width="267" height="267">
               <div class="item-title">
-                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               </div>
-              <div class="item-price">415 <span class="rub">&#8381;</span><span class="kg">/кг</span></div>
+              <div class="item-price">415<span class="rub">&#32;&#8381;</span><span class="kg">/кг</span></div>
               <a href="#" class="btn btn-view">Быстрый просмотр</a>
             </li>
           </ul>
@@ -200,8 +200,8 @@
               </p>
               <div class="subscribe-input">
                 <div class="group">
-                  <input type="email" class="form-elem">
-                  <label class="tip">Электронная почта</label>
+                  <input type="email" class="form-elem" id="subscribe">
+                  <label class="tip" for="subscribe">Электронная почта</label>
                 </div>
                 <input type="submit" value="Отправить" class="btn btn-subscribe">
               </div>
@@ -213,13 +213,13 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177383!2d30.32088925140606!3d59.938796868959315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2snl!4v1463140784935" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
           <div class="contact">
             <p class="contact-address">
-              Адрес главного офиса и офлайн магазина:
-              <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              <span class="contact-text">Адрес главного офиса и офлайн магазина:</span>
+              <span class="contact-address-place">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             </p>
             <p class="contact-tel">
-              Для заказов по телефону:
-              <span>8 812 450-25-25</span>
-              (с 10 до 20 ежедневно)
+              <span class="contact-text">Для заказов по телефону:</span>
+              <span class="contact-tel-number">8 812 450-25-25</span>
+              <span class="contact-text">(с 10 до 20 ежедневно)</span>
             </p>
             <a href="feedback.html" class="btn btn-feedback">Форма обратной связи</a>
           </div>
@@ -256,18 +256,19 @@
         <button class="form-feedback-exit"></button>
         <p>Мы обязательно вам ответим!</p>
         <div class="group">
-          <input type="text" name="username" class="form-elem tip-name">
-          <label class="tip">Как вас зовут?</label>
+          <input type="text" name="username" class="form-elem" id="feedback-username">
+          <label class="tip" for="feedback-username">Как вас зовут?</label>
         </div>
         
         <div class="group">
-          <input type="email" class="form-elem tip-email" name="email">
-          <label class="tip">Ваша почта для ответа</label>
+          <input type="email" class="form-elem" name="email" id="feedback-email">
+          <label class="tip" for="feedback-email">Ваша почта для ответа</label>
         </div>
         <div class="group">
-          <textarea class="form-elem tip-text" name = "text"></textarea>
-          <label class="tip">Напишите что-нибудь...</label>
+          <textarea class="form-elem" name = "text" id="feedback-text"></textarea>
+          <label class="tip" for="feedback-text">Напишите что-нибудь...</label>
         </div>
+
         <input type="submit" value="Отправить" class="btn btn-form-feedback">
       </form>
     </div>
